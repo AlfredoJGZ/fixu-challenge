@@ -1,0 +1,87 @@
+@import "./normalize";
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #737271;
+}
+
+picture {
+  img {
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+}
+
+.MuiCard-root {
+  background-color: transparent !important;
+}
+
+.card-body {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+@media (min-width: 658px) {
+  picture img {
+    height: 100%;
+  }
+  .card-body {
+    display: flex;
+    .MuiCardMedia-root,
+    .MuiCardContent-root {
+      width: 50%;
+    }
+  }
+}
+
+.MuiCardHeader-root {
+  background-color: black;
+  margin-bottom: -0.5rem;
+  border-radius: 0.5rem;
+
+  .MuiButtonBase-root {
+    color: #fff;
+  }
+}
+
+.MuiFormControl-root {
+  margin-top: 1.5rem !important;
+  width: 100% !important;
+  label.Mui-focused {
+    color: #ffd136;
+  }
+  .MuiInput-root {
+    border-bottom: 2px solid #ffd136 !important;
+
+    &::after {
+      border-bottom: 0px !important;
+    }
+    &::before {
+      border-bottom: 0px !important;
+    }
+  }
+}
+
+.checkbox {
+  margin: 1rem 0 2rem 0;
+  svg {
+    color: #ffd136;
+  }
+  p {
+    font-weight: 400;
+  }
+  a {
+    color: #ffd136;
+  }
+}
+
+.contact-btn {
+  width: 100%;
+  background-color: #ffd136 !important;
+  padding: 1rem !important;
+  color: #000 !important;
+  font-weight: 800 !important;
+}
